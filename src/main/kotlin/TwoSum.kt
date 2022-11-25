@@ -4,19 +4,19 @@ fun main() {
     val nums = intArrayOf(2, 7, 11, 15)
     val target = 9
 
-    println(twoSum(nums, target).size)
+    twoSum(nums, target).forEach {
+        println(it)
+    }
 }
 
 fun twoSum(nums: IntArray, target: Int): IntArray {
-    val indexMap = HashMap<Int, Int>()
-
-    nums.forEachIndexed { index, number ->
-        val requiredNum = target - number
-        if (indexMap.containsKey(requiredNum)) {
-            return intArrayOf(indexMap[requiredNum]!!, index)
+    val complements = HashMap<Int, Int>()
+    nums.forEachIndexed { index, num ->
+        val requiredNum = target - num
+        if (complements.containsKey(requiredNum)) {
+            return intArrayOf(complements[requiredNum]!!, index)
         }
-        indexMap[number] = index
+        complements[num] = index
     }
-
     return intArrayOf()
 }
