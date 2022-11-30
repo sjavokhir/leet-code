@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence
+package array// https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence
 
 fun main() {
     println(canMakeArithmeticProgression(intArrayOf(3, 5, 1)))

@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/strobogrammatic-number/
+package hash_table// https://leetcode.com/problems/strobogrammatic-number/
 
 fun main() {
     println(function("111"))

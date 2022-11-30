@@ -1,7 +1,5 @@
 package sort
 
-import java.util.LinkedList
-
 /*
 Ikki arrayda tartiblangan sonlar keltirilgan. Ularni tartiblangan ko'rinishda merge qiling.
 Misol uchun. [1,2,4,7] va [3,5,8,9]
@@ -15,14 +13,12 @@ O(n+m) - Vaqt. Chunki n+m marta loop bo'lishi kerak
  */
 
 fun main() {
-    mergeSort(mutableListOf(1, 2, 4, 7), mutableListOf(3, 5, 8, 9)).forEach {
-        println(it)
-    }
+    println(mergeSort(intArrayOf(1, 2, 4, 7), intArrayOf(3, 5, 8, 9)))
 }
 
-fun mergeSort(arr1: MutableList<Int>, arr2: MutableList<Int>): MutableList<Int> {
+fun mergeSort(arr1: IntArray, arr2: IntArray): Double {
     val n = arr1.size
-    val m = arr1.size
+    val m = arr2.size
     var i = 0
     var j = 0
     val result = mutableListOf<Int>()
@@ -47,5 +43,9 @@ fun mergeSort(arr1: MutableList<Int>, arr2: MutableList<Int>): MutableList<Int> 
         j++
     }
 
-    return result
+    return if (result.size % 2 == 0) {
+        (result[result.size / 2] + result[(result.size / 2) - 1]).toDouble() / 2
+    } else {
+        result[result.lastIndex / 2].toDouble()
+    }
 }

@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/majority-element/
+package array// https://leetcode.com/problems/majority-element/
 
 fun main() {
     println(majorityElement(intArrayOf(2, 2, 1, 1, 1, 2, 2)))
