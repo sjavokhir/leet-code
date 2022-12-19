@@ -1,4 +1,4 @@
-package array
+package leetcode_problems
 
 fun main() {
     println(uniqueOccurrences(intArrayOf(1, 2, 2, 1, 1, 3)))

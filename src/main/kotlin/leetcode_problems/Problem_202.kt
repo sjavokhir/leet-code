@@ -1,4 +1,4 @@
-package hash_table// https://leetcode.com/problems/happy-number
+package leetcode_problems
 
 fun main() {
     println(isHappy(7))

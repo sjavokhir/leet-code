@@ -1,8 +1,6 @@
-package stack
+package leetcode_problems
 
 import java.util.Stack
-
-// https://leetcode.com/problems/valid-parentheses/
 
 fun main() {
     val s = "([{[()]}])"

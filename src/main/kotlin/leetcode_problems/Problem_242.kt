@@ -1,18 +1,6 @@
-package hash_table
+package leetcode_problems
 
-// https://leetcode.com/problems/valid-anagram/
 fun main() {
-    /*
-    Input: strs = ["eat","tea","tan","ate","nat","bat"]
-    Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
-
-    Input: strs = [""]
-    Output: [[""]]
-
-    Input: strs = ["a"]
-    Output: [["a"]]
-     */
-
     println(isAnagram("rano", "anor"))
 }
 

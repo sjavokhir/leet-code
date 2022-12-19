@@ -1,4 +1,4 @@
-package bit// https://leetcode.com/problems/number-of-1-bits
+package leetcode_problems
 
 fun main() {
 }

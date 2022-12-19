@@ -1,4 +1,4 @@
-package math// https://leetcode.com/problems/largest-perimeter-triangle
+package leetcode_problems
 
 fun main() {
     println(largestPerimeter(intArrayOf(3, 2, 3, 4)))

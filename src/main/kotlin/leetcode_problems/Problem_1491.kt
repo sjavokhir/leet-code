@@ -1,4 +1,4 @@
-package array// https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
+package leetcode_problems
 
 fun main() {
     val salary = intArrayOf(

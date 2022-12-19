@@ -1,4 +1,4 @@
-package math// https://leetcode.com/problems/count-odd-numbers-in-an-interval-range
+package leetcode_problems
 
 fun main() {
     println(countOdds(3, 7))

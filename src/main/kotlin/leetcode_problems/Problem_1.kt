@@ -1,4 +1,4 @@
-package array// https://leetcode.com/problems/two-sum/
+package leetcode_problems
 
 fun main() {
     val nums = intArrayOf(2, 7, 11, 15)

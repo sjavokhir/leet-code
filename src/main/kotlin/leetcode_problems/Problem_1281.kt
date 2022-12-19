@@ -1,4 +1,4 @@
-package math// https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer
+package leetcode_problems
 
 fun main() {
     println(subtractProductAndSum(10225))
