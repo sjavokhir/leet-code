@@ -1,3 +1,3 @@
 
-rootProject.name = "leet-code"
+rootProject.name = "dsa-kotlin"
 

@@ -2,7 +2,6 @@ package leetcode_problems
 
 import java.util.*
 
-
 fun main() {
     println(threeSum(intArrayOf(-1, 0, 1, 2, -1, -4)))
 }
