@@ -5,6 +5,12 @@ fun main() {
     println(removeElement(intArrayOf(0, 1, 2, 2, 3, 0, 4, 2), 2))
 }
 
+fun removeElement(nums: IntArray, num: Int): Int {
+    var length = 0
+    nums.forEach { if (it != num) nums[length++] = it }
+    return length
+}
+
 fun removeElement2(nums: IntArray, value: Int): Int {
     if (nums.isEmpty()) return value
 
@@ -34,13 +40,6 @@ fun removeElement2(nums: IntArray, value: Int): Int {
             counter++
         } else return counter
     }
-
-    return counter
-}
-
-fun removeElement(nums: IntArray, num: Int): Int {
-    var counter = 0
-    nums.forEach { if (it != num) nums[counter++] = it }
 
     return counter
 }
