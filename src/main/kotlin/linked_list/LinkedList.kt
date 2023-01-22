@@ -1,5 +1,7 @@
 package linked_list
 
+import utils.print
+
 class LinkedList<T> {
 
     private var head: Node<T>? = null
@@ -118,14 +120,14 @@ class LinkedList<T> {
 }
 
 fun main() {
-    "push" example {
+    "push" print {
         val list = LinkedList<Int>()
         list.push(3).push(2).push(1)
 
         println(list)
     }
 
-    "append" example {
+    "append" print {
         val list = LinkedList<Int>()
         list.append(1)
         list.append(2)
@@ -134,7 +136,7 @@ fun main() {
         println(list)
     }
 
-    "inserting at a particular index" example {
+    "inserting at a particular index" print {
         val list = LinkedList<Int>()
         list.push(3)
         list.push(2)
@@ -148,7 +150,7 @@ fun main() {
         println("After inserting: $list")
     }
 
-    "pop" example {
+    "pop" print {
         val list = LinkedList<Int>()
         list.push(3)
         list.push(2)
@@ -161,7 +163,7 @@ fun main() {
         println("Popped value: $poppedValue")
     }
 
-    "removing the last node" example {
+    "removing the last node" print {
         val list = LinkedList<Int>()
         list.push(3)
         list.push(2)
@@ -174,7 +176,7 @@ fun main() {
         println("Removed value: $removedValue")
     }
 
-    "removing a node after a particular node" example {
+    "removing a node after a particular node" print {
         val list = LinkedList<Int>()
         list.push(3)
         list.push(2)

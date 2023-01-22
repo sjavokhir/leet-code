@@ -1,5 +1,7 @@
 package linked_list
 
+import utils.print
+
 data class Node<T>(val value: T, var next: Node<T>? = null) {
 
     override fun toString(): String {
@@ -12,7 +14,7 @@ data class Node<T>(val value: T, var next: Node<T>? = null) {
 }
 
 fun main() {
-    "creating and linking nodes" example {
+    "creating and linking nodes" print {
         val node1 = Node(value = 1)
         val node2 = Node(value = 2)
         val node3 = Node(value = 3)
@@ -22,9 +24,4 @@ fun main() {
 
         println(node1)
     }
-}
-
-infix fun String.example(onAction: () -> Unit) {
-    println("---Example of $this---")
-    onAction()
 }
