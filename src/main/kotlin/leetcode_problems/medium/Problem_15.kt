@@ -1,12 +1,15 @@
-package leetcode_problems
+package leetcode_problems.medium
 
+import utils.print
 import java.util.*
 
 fun main() {
-    println(threeSum(intArrayOf(-1, 0, 1, 2, -1, -4)))
+    "3Sum solution" print {
+        println(solution(intArrayOf(-1, 0, 1, 2, -1, -4)))
+    }
 }
 
-fun threeSum(nums: IntArray): List<List<Int>> {
+private fun solution(nums: IntArray): List<List<Int>> {
     Arrays.sort(nums)
 
     val result: MutableSet<List<Int>> = HashSet()

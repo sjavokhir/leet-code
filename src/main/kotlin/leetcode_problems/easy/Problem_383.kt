@@ -1,4 +1,4 @@
-package leetcode_problems
+package leetcode_problems.easy
 
 import utils.print
 

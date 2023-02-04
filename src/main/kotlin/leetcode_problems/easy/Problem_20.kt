@@ -1,13 +1,15 @@
-package leetcode_problems
+package leetcode_problems.easy
 
-import java.util.Stack
+import utils.print
+import java.util.*
 
 fun main() {
-    val s = "([{[()]}])"
-    println(isValid(s))
+    "Valid Parentheses solution" print {
+        println(solution("([{[()]}])"))
+    }
 }
 
-fun isValid(s: String): Boolean {
+private fun solution(s: String): Boolean {
     val stack = Stack<Char>()
 
     s.forEach { element ->

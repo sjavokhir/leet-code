@@ -1,15 +1,15 @@
-package leetcode_problems
+package leetcode_problems.easy
 
 import utils.print
 
 fun main() {
     "Add Binary solution" print {
-        println(solution1("11", "1"))
-        println(solution1("1010", "1011"))
+        println(solution("11", "1"))
+        println(solution("1010", "1011"))
     }
 }
 
-private fun solution1(a: String, b: String): String {
+private fun solution(a: String, b: String): String {
     var i = a.lastIndex
     var j = b.lastIndex
     var carry = 0

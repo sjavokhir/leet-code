@@ -31,15 +31,3 @@ fun thirdMax(nums: IntArray): Int {
     // If Third Max was not updated, return the First Max
     return if (tMax == Long.MIN_VALUE) fMax.toInt() else tMax.toInt()
 }
-
-fun thirdMax2(nums: IntArray): Int {
-    Arrays.sort(nums)
-    val lastIndex = removeDuplicates(nums)
-
-    return when {
-        lastIndex == 1 || nums.size == 1 -> nums.first()
-        lastIndex == 2 || nums.size == 2 -> nums[1]
-        lastIndex == nums.size -> nums[nums.lastIndex - 2]
-        else -> nums[lastIndex - 3]
-    }
-}

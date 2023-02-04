@@ -1,4 +1,4 @@
-package leetcode_problems
+package leetcode_problems.easy
 
 import utils.print
 
@@ -8,6 +8,13 @@ fun main() {
         println(solution1(-121))
         println(solution1(10))
         println(solution1(1001))
+    }
+
+    "Palindrome Number solution 2" print {
+        println(solution2(121))
+        println(solution2(-121))
+        println(solution2(10))
+        println(solution2(1001))
     }
 }
 

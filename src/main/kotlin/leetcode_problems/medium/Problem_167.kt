@@ -1,9 +1,15 @@
-package leetcode_problems
+package leetcode_problems.medium
 
 import utils.print
 
 fun main() {
-    "167. Two Sum II - Input Array Is Sorted solution 1" print {
+    "Two Sum II - Input Array Is Sorted solution 1" print {
+        println(solution1(numbers = intArrayOf(2, 7, 11, 15), target = 9).toList())
+        println(solution1(numbers = intArrayOf(2, 3, 4), target = 6).toList())
+        println(solution1(numbers = intArrayOf(-1, 0), target = -1).toList())
+    }
+
+    "Two Sum II - Input Array Is Sorted solution 2" print {
         println(solution2(numbers = intArrayOf(2, 7, 11, 15), target = 9).toList())
         println(solution2(numbers = intArrayOf(2, 3, 4), target = 6).toList())
         println(solution2(numbers = intArrayOf(-1, 0), target = -1).toList())
@@ -18,10 +24,8 @@ private fun solution1(numbers: IntArray, target: Int): IntArray {
             }
         }
     }
-
     return intArrayOf()
 }
-
 
 private fun solution2(numbers: IntArray, target: Int): IntArray {
     var left = 0
@@ -32,7 +36,7 @@ private fun solution2(numbers: IntArray, target: Int): IntArray {
         if (tmp == target) return intArrayOf(left + 1, right + 1)
         if (tmp > target) {
             right--
-        } else if (tmp < target) {
+        } else {
             left++
         }
     }
