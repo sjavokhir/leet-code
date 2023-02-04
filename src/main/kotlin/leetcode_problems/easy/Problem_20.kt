@@ -4,7 +4,7 @@ import utils.print
 import java.util.*
 
 fun main() {
-    "Valid Parentheses solution" print {
+    "20. Valid Parentheses solution" print {
         println(solution("([{[()]}])"))
     }
 }

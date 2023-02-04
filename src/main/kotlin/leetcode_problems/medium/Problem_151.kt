@@ -4,13 +4,13 @@ import utils.print
 
 
 fun main() {
-    "Reverse Words in a String solution 1" print {
+    "151. Reverse Words in a String solution 1" print {
         println(solution1("the sky is blue"))
         println(solution1("  hello world  "))
         println(solution1("a good   example"))
     }
 
-    "Reverse Words in a String solution 2" print {
+    "151. Reverse Words in a String solution 2" print {
         println(solution2("the sky is blue"))
         println(solution2("  hello world  "))
         println(solution2("a good   example"))

@@ -3,7 +3,7 @@ package leetcode_problems.medium
 import utils.print
 
 fun main() {
-    "Longest Substring Without Repeating Characters solution" print {
+    "3. Longest Substring Without Repeating Characters solution" print {
         println(solution("abcabcbb"))
         println(solution("bbbbb"))
         println(solution("pwwkew"))

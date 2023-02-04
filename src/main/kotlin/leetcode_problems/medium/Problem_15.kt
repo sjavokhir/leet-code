@@ -4,7 +4,7 @@ import utils.print
 import java.util.*
 
 fun main() {
-    "3Sum solution" print {
+    "15. 3Sum solution" print {
         println(solution(intArrayOf(-1, 0, 1, 2, -1, -4)))
     }
 }

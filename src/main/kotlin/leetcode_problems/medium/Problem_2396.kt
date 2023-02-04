@@ -3,7 +3,7 @@ package leetcode_problems.medium
 import utils.print
 
 fun main() {
-    "Strictly Palindromic Number solution" print {
+    "2396. Strictly Palindromic Number solution" print {
         println(solution(9))
         println(solution(4))
     }

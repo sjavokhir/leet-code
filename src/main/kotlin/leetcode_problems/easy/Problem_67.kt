@@ -3,7 +3,7 @@ package leetcode_problems.easy
 import utils.print
 
 fun main() {
-    "Add Binary solution" print {
+    "67. Add Binary solution" print {
         println(solution("11", "1"))
         println(solution("1010", "1011"))
     }

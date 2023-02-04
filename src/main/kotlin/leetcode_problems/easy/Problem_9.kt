@@ -3,14 +3,14 @@ package leetcode_problems.easy
 import utils.print
 
 fun main() {
-    "Palindrome Number solution 1" print {
+    "9. Palindrome Number solution 1" print {
         println(solution1(121))
         println(solution1(-121))
         println(solution1(10))
         println(solution1(1001))
     }
 
-    "Palindrome Number solution 2" print {
+    "9. Palindrome Number solution 2" print {
         println(solution2(121))
         println(solution2(-121))
         println(solution2(10))

@@ -40,7 +40,7 @@ import utils.print
  */
 
 fun main() {
-    "Minimum Size Subarray Sum solution" print {
+    "209. Minimum Size Subarray Sum solution" print {
         println(solution(7, intArrayOf(2, 3, 1, 2, 4, 3)))
         println(solution(4, intArrayOf(1, 4, 4)))
         println(solution(11, intArrayOf(1, 1, 1, 1, 1, 1, 1, 1)))
@@ -48,20 +48,18 @@ fun main() {
 }
 
 private fun solution(target: Int, nums: IntArray): Int {
-    var start = 0
-    var end = 0
+    var left = 0
+    var right = 0
     var sum = 0
-    var minLen = Int.MAX_VALUE
-
-    while (end < nums.size) {
-        sum += nums[end]
-        end++
+    var ans = Int.MAX_VALUE
+    while (right < nums.size) {
+        sum += nums[right]
+        right++
         while (sum >= target) {
-            minLen = minOf(minLen, end - start)
-            sum -= nums[start]
-            start++
+            ans = minOf(ans, right - left)
+            sum -= nums[left]
+            left++
         }
     }
-
-    return if (minLen != Int.MAX_VALUE) minLen else 0
+    return if (ans != Int.MAX_VALUE) ans else 0
 }

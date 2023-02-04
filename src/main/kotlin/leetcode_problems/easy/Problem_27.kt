@@ -3,12 +3,12 @@ package leetcode_problems.easy
 import utils.print
 
 fun main() {
-    "Remove Element solution 1" print {
+    "27. Remove Element solution 1" print {
         println(solution1(intArrayOf(3, 2, 2, 3), 3))
         println(solution1(intArrayOf(0, 1, 2, 2, 3, 0, 4, 2), 2))
     }
 
-    "Remove Element solution 2" print {
+    "27. Remove Element solution 2" print {
         println(solution2(intArrayOf(3, 2, 2, 3), 3))
         println(solution2(intArrayOf(0, 1, 2, 2, 3, 0, 4, 2), 2))
     }

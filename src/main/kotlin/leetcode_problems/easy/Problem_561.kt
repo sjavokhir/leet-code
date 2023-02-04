@@ -24,7 +24,7 @@ import utils.print
  */
 
 fun main() {
-    "Array Partition solution" print {
+    "561. Array Partition solution" print {
         println(solution(intArrayOf(1, 4, 3, 2)))
         println(solution(intArrayOf(6, 2, 6, 5, 1, 2)))
     }

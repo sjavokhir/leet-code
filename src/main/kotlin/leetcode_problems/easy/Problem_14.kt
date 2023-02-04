@@ -3,12 +3,12 @@ package leetcode_problems.easy
 import utils.print
 
 fun main() {
-    "Longest Common Prefix solution 1" print {
+    "14. Longest Common Prefix solution 1" print {
         println(solution1(arrayOf("flower", "flow", "flight")))
         println(solution1(arrayOf("dog", "racecar", "car")))
     }
 
-    "Longest Common Prefix solution 2" print {
+    "14. Longest Common Prefix solution 2" print {
         println(solution2(arrayOf("flower", "flow", "flight")))
         println(solution2(arrayOf("dog", "racecar", "car")))
     }

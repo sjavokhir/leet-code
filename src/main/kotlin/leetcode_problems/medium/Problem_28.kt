@@ -3,7 +3,7 @@ package leetcode_problems.medium
 import utils.print
 
 fun main() {
-    "Find the Index of the First Occurrence in a String solution" print {
+    "28. Find the Index of the First Occurrence in a String solution" print {
         println(solution("sadbutsad", "sad"))
         println(solution("leetcode", "leeto"))
         println(solution("leetcode", "code"))

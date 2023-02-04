@@ -3,7 +3,7 @@ package leetcode_problems.easy
 import utils.print
 
 fun main() {
-    "Calculate Money in Leetcode Bank solution" print {
+    "1716. Calculate Money in Leetcode Bank solution" print {
         println(solution(4))
         println(solution(10))
         println(solution(20))

@@ -3,13 +3,13 @@ package leetcode_problems.medium
 import utils.print
 
 fun main() {
-    "Two Sum II - Input Array Is Sorted solution 1" print {
+    "167. Two Sum II - Input Array Is Sorted solution 1" print {
         println(solution1(numbers = intArrayOf(2, 7, 11, 15), target = 9).toList())
         println(solution1(numbers = intArrayOf(2, 3, 4), target = 6).toList())
         println(solution1(numbers = intArrayOf(-1, 0), target = -1).toList())
     }
 
-    "Two Sum II - Input Array Is Sorted solution 2" print {
+    "167. Two Sum II - Input Array Is Sorted solution 2" print {
         println(solution2(numbers = intArrayOf(2, 7, 11, 15), target = 9).toList())
         println(solution2(numbers = intArrayOf(2, 3, 4), target = 6).toList())
         println(solution2(numbers = intArrayOf(-1, 0), target = -1).toList())

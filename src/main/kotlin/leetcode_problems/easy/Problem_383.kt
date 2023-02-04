@@ -3,13 +3,14 @@ package leetcode_problems.easy
 import utils.print
 
 fun main() {
-    "Ransom Note solution 1" print {
+    "383. Ransom Note solution 1" print {
         println(solution1("a", "b"))
         println(solution1("aa", "ab"))
         println(solution1("aa", "aab"))
         println(solution1("bg", "efjbdfbdgfjhhaiigfhbaejahgfbbgbjagbddfgdiaigdadhcfcj"))
     }
-    "Ransom Note solution 2" print {
+
+    "383. Ransom Note solution 2" print {
         println(solution2("a", "b"))
         println(solution2("aa", "ab"))
         println(solution2("aa", "aab"))

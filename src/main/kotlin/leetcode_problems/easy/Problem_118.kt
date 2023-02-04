@@ -3,11 +3,12 @@ package leetcode_problems.easy
 import utils.print
 
 fun main() {
-    "Pascal's Triangle solution 1" print {
+    "118. Pascal's Triangle solution 1" print {
         println(solution1(5))
         println(solution1(7))
     }
-    "Pascal's Triangle solution 2" print {
+
+    "118. Pascal's Triangle solution 2" print {
         println(solution2(5))
         println(solution2(7))
     }

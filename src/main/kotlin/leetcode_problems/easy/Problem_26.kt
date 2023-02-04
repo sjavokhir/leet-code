@@ -3,7 +3,7 @@ package leetcode_problems.easy
 import utils.print
 
 fun main() {
-    "Remove Duplicates from Sorted Array solution" print {
+    "26. Remove Duplicates from Sorted Array solution" print {
         println(solution(intArrayOf(1, 1, 2)))
         println(solution(intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4)))
     }
