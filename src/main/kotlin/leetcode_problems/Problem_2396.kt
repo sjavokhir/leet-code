@@ -4,11 +4,11 @@ import utils.print
 
 fun main() {
     "Strictly Palindromic Number solution" print {
-        println(solution(9))
-        println(solution(4))
+        println(solution1(9))
+        println(solution1(4))
     }
 }
 
-private fun solution(n: Int): Boolean {
+private fun solution1(n: Int): Boolean {
     return false
 }

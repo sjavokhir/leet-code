@@ -1,15 +1,17 @@
 package leetcode_problems
 
-fun main() {
-    val nums = intArrayOf(2, 7, 11, 15)
-    val target = 9
+import utils.print
+import java.util.*
 
-    twoSum(nums, target).forEach {
-        println(it)
+fun main() {
+    "1. Two Sum solution" print {
+        println(solution1(intArrayOf(2, 7, 11, 15), 9).toList())
+        println(solution1(intArrayOf(3, 2, 4), 6).toList())
+        println(solution1(intArrayOf(3, 3), 6).toList())
     }
 }
 
-fun twoSum(nums: IntArray, target: Int): IntArray {
+private fun solution1(nums: IntArray, target: Int): IntArray {
     val complements = HashMap<Int, Int>()
     nums.forEachIndexed { index, num ->
         val requiredNum = target - num
