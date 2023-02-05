@@ -1,14 +1,18 @@
-package leetcode_problems
+package leetcode_problems.easy
+
+import utils.print
 
 fun main() {
-    println(plusOne(intArrayOf(1, 2, 3)).toList())
-    println(plusOne(intArrayOf(4, 3, 2, 1)).toList())
-    println(plusOne(intArrayOf(4, 9, 9, 9)).toList())
-    println(plusOne(intArrayOf(9)).toList())
-    println(plusOne(intArrayOf(9, 8, 7, 6, 5, 4, 3, 2, 1, 0)).toList())
+    "66. Plus One solition" print {
+        println(solition(intArrayOf(1, 2, 3)).toList())
+        println(solition(intArrayOf(4, 3, 2, 1)).toList())
+        println(solition(intArrayOf(4, 9, 9, 9)).toList())
+        println(solition(intArrayOf(9)).toList())
+        println(solition(intArrayOf(9, 8, 7, 6, 5, 4, 3, 2, 1, 0)).toList())
+    }
 }
 
-fun plusOne(digits: IntArray): IntArray {
+private fun solition(digits: IntArray): IntArray {
     var lastNineIndex = digits.lastIndex
 
     while (lastNineIndex >= 0 && digits[lastNineIndex] == 9) {
