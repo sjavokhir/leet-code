@@ -1,10 +1,14 @@
-package leetcode_problems
+package leetcode_problems.easy
+
+import utils.print
 
 fun main() {
-    println(majorityElement(intArrayOf(2, 2, 1, 1, 1, 2, 2)))
+    "169. Majority Element solution" print {
+        println(solution(intArrayOf(2, 2, 1, 1, 1, 2, 2)))
+    }
 }
 
-fun majorityElement(nums: IntArray): Int {
+private fun solution(nums: IntArray): Int {
     var count = 0
     var candidate: Int? = null
 
