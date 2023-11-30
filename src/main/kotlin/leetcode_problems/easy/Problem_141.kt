@@ -27,7 +27,7 @@ import utils.print
 
 fun main() {
     "141. Linked List Cycle solution" print {
-        println(solution(null))
+        println(solution(ListNode(2)))
     }
 }
 
