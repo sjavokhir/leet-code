@@ -42,6 +42,7 @@ private fun solution(head: ListNode?): Boolean {
     return false
 }
 
-class ListNode(var `val`: Int) {
+data class ListNode(
+    val value: Int,
     var next: ListNode? = null
-}
+)
